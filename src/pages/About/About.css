@@ -1,4 +1,128 @@
-section{
-    height: 100vh;
-    padding: 2rem;
+/* About.css */
+.about-section {
+    padding: clamp(2rem, 5vh, 4rem) 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper {
+    max-width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.responsive-headline {
+    font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 auto clamp(2rem, 3vh, 3rem);
+    max-width: 18ch;
+}
+
+.about-grid {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.about-card {
+    padding: clamp(1.25rem, 3vw, 1.5rem);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-title {
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: clamp(0.9rem, 1.25vw + 0.5rem, 1.1rem);
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.stats-card {
+    padding: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+    background: rgba(123, 97, 255, 0.05);
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.stats-icon {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    margin: 0.5rem 0;
+}
+
+.stat-detail {
+    font-size: clamp(0.85rem, 1.25vw, 1rem);
+    color: var(--text-secondary);
+}
+
+.approach-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+    margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+.approach-item {
+    padding: clamp(1rem, 2vw, 1.25rem);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.approach-item:hover {
+    background: rgba(123, 97, 255, 0.03);
+}
+
+.approach-icon {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--accent-primary);
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .responsive-headline {
+        margin-bottom: 1.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .approach-item {
+        padding: 1rem;
+    }
 }
