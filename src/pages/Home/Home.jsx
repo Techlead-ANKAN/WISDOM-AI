@@ -15,7 +15,7 @@ function Home() {
 
         <div className="hero-content">
           <h1 className="dark-headline">
-            <span className="neon-gradient">Wisdom AI</span>
+            <span className="neon-gradient">WisdomAI. Africa</span>
             <br />
             Empowering Enterprise Intelligence
             <br />
