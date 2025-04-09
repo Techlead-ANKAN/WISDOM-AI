@@ -6,31 +6,37 @@ import './About.css';
 const About = () => {
   return (
     <div className="dark-container">
-      <section className="about-section">
-        <div className="content-wrapper">
+      <section className="about-hero">
+        {/* Updated Background Structure */}
+        <div className="hero-bg-wrap">
+          <div className="circle-gradient-left"></div>
+          <div className="dark-overlay"></div>
+        </div>
+
+        <div className="hero-content">
           <h1 className="responsive-headline">
-            <span className="neon-gradient">Wisdom AI</span>
+            <span className="neon-gradient">African AI Innovation</span>
             <br />
-            Enterprise Intelligence Redefined
+            Built for Enterprise Excellence
           </h1>
 
-          <div className="about-grid">
+          <div className="about-content">
             {/* Who We Are */}
             <div className="about-card">
-              <h2 className="section-title">Who We Are</h2>
+              <h2 className="section-title neon-gradient">Who We Are</h2>
               <p className="section-text">
-                African AI innovators building secure, enterprise-grade solutions that automate operations, 
-                boost productivity, and deliver actionable insights through private, compliant systems.
+                Wisdom AI specializes in secure, internal-use AI systems that automate operations, 
+                enhance productivity, and deliver data-driven insights within private enterprise environments.
               </p>
             </div>
 
-            {/* Team Stats */}
-            <div className="stats-card">
-              <FiUsers className="stats-icon" />
-              <div className="stats-content">
+            {/* Team Section */}
+            <div className="team-card">
+              <FiUsers className="team-icon" />
+              <div className="stats-group">
                 <h3 className="stat-number">113+</h3>
-                <p className="stat-label">AI Specialists</p>
-                <p className="stat-detail">Engineering Excellence Team</p>
+                <p className="stat-label">AI Experts Team</p>
+                <p className="stat-detail">Engineers, Data Scientists & Innovation Specialists</p>
               </div>
             </div>
 
@@ -38,18 +44,18 @@ const About = () => {
             <div className="approach-grid">
               <div className="approach-item">
                 <FiLock className="approach-icon" />
-                <h4>Secure by Design</h4>
-                <p>Privacy-first architecture</p>
+                <h4>Private Infrastructure</h4>
+                <p>Compliant secure architecture</p>
               </div>
               <div className="approach-item">
                 <FiZap className="approach-icon" />
-                <h4>Enterprise Core</h4>
-                <p>Scalable internal solutions</p>
+                <h4>Enterprise Focus</h4>
+                <p>Internal operations solutions</p>
               </div>
               <div className="approach-item">
                 <FiGlobe className="approach-icon" />
-                <h4>African Innovation</h4>
-                <p>Global-standard local expertise</p>
+                <h4>African Core</h4>
+                <p>Global-grade local expertise</p>
               </div>
             </div>
           </div>
