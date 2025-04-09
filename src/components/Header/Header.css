@@ -10,6 +10,7 @@
   background: rgba(10, 10, 10, 0.6);
   backdrop-filter: blur(8px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 10px 0px 20px white;
 }
 
 /* Updated logo styles for image */
