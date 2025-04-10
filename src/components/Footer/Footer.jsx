@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         {/* Links Column */}
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <button className="footer-link" onClick={() => setShowPrivacyModal(true)}>
             Privacy Policy
           </button>
@@ -100,7 +100,7 @@ const Footer = () => {
             Terms of Service
           </button>
           <Link onClick={() => { scrollTo("contact", "/contact") }} className="footer-link">Contact Us</Link>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <div className="footer-copyright">
